@@ -43,7 +43,8 @@ console.log("PREVIOUS=[" + JSON.stringify(result, 0, "\t") + "]");
 var output = v => alert( (
   result = v,
   [
-    v.constructor.toString(),
+    v.constructor.toString(), ,
+    String(v), ,
     JSON.stringify(v, 0, "\t")
   ]
 ) );
