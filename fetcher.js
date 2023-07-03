@@ -29,3 +29,38 @@ fetcher("https://foo.bar/file.ext")
 .then(output)
 .catch(output)
 );
+
+
+
+///////
+
+
+
+var result; // some REPL testing...
+
+console.log("PREVIOUS=[" + JSON.stringify(result, 0, "\t") + "]");
+
+var output = v => alert( (
+  result = v,
+  [
+    v.constructor.toString(),
+    JSON.stringify(v, 0, "\t")
+  ]
+) );
+
+if(!fetcher(
+
+  // "https://jsonplaceholder.typicode.com/posts/1", // Object (parsed JSON)
+
+// "https://jsonplaceholder.typicode.com", // String (html responseText; default fallback if response.headers.get("content-type") is not "application/json")
+
+"https://exYZZYample.com", // TypeError(Array) [ +statusCode, "statusText", "url" ]
+
+// "https://api.github.com/users/DarrenSem/repos", // dataset a bit larger than I was expecting
+
+null
+)
+.then(output)
+.catch(output)
+)7;
+
