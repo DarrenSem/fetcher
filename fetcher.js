@@ -55,8 +55,8 @@ if(!fetcher(
 
 // "https://jsonplaceholder.typicode.com", // String (html responseText; default fallback if response.headers.get("content-type") is not "application/json")
 
-"https://exYZZYample.com", // TypeError(Array) [ +statusCode, "statusText", "url" ]
-
+"https://raw.githubusercontent.com/DarrenSem/4/0/4", // Error(Array) [ +statusCode, "statusText", "url" ]
+	
 // "https://api.github.com/users/DarrenSem/repos", // dataset a bit larger than I was expecting
 
 null
